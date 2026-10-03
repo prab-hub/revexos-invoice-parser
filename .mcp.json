@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "revexos": {
+      "type": "http",
+      "url": "https://revexos.com/api/mcp"
+    }
+  }
+}

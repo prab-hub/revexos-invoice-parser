@@ -1,0 +1,66 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 842] /Resources << /Font << /F1 4 0 R >> >> /Contents 5 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+5 0 obj
+<< /Length 1603 >>
+stream
+BT
+/F1 18 Tf 1 0 0 1 50 780 Tm (INVOICE) Tj
+/F1 10 Tf 1 0 0 1 50 750 Tm (Northwind Analytics LLC) Tj
+/F1 10 Tf 1 0 0 1 50 736 Tm (410 Market Street, Suite 200, San Francisco, CA 94111) Tj
+/F1 10 Tf 1 0 0 1 360 750 Tm (Invoice #: NWA-2026-0418) Tj
+/F1 10 Tf 1 0 0 1 360 736 Tm (Invoice date: 2026-09-15) Tj
+/F1 10 Tf 1 0 0 1 360 722 Tm (Due date: 2026-10-15) Tj
+/F1 10 Tf 1 0 0 1 360 708 Tm (PO #: PO-77310) Tj
+/F1 10 Tf 1 0 0 1 360 694 Tm (Terms: Net 30) Tj
+/F1 10 Tf 1 0 0 1 50 700 Tm (Bill to:) Tj
+/F1 10 Tf 1 0 0 1 50 686 Tm (Contoso Retail Inc.) Tj
+/F1 10 Tf 1 0 0 1 50 672 Tm (88 Harbor Road, Boston, MA 02110) Tj
+/F1 10 Tf 1 0 0 1 50 620 Tm (Description) Tj
+/F1 10 Tf 1 0 0 1 330 620 Tm (Qty) Tj
+/F1 10 Tf 1 0 0 1 390 620 Tm (Unit price) Tj
+/F1 10 Tf 1 0 0 1 480 620 Tm (Amount (USD)) Tj
+/F1 10 Tf 1 0 0 1 50 600 Tm (Revenue dashboard implementation) Tj
+/F1 10 Tf 1 0 0 1 330 600 Tm (1) Tj
+/F1 10 Tf 1 0 0 1 390 600 Tm (4,500.00) Tj
+/F1 10 Tf 1 0 0 1 480 600 Tm (4,500.00) Tj
+/F1 10 Tf 1 0 0 1 50 584 Tm (Data pipeline hours) Tj
+/F1 10 Tf 1 0 0 1 330 584 Tm (12) Tj
+/F1 10 Tf 1 0 0 1 390 584 Tm (150.00) Tj
+/F1 10 Tf 1 0 0 1 480 584 Tm (1,800.00) Tj
+/F1 10 Tf 1 0 0 1 50 568 Tm (Monthly support retainer (Sep)) Tj
+/F1 10 Tf 1 0 0 1 330 568 Tm (1) Tj
+/F1 10 Tf 1 0 0 1 390 568 Tm (750.00) Tj
+/F1 10 Tf 1 0 0 1 480 568 Tm (750.00) Tj
+/F1 10 Tf 1 0 0 1 390 530 Tm (Subtotal) Tj
+/F1 10 Tf 1 0 0 1 480 530 Tm (7,050.00) Tj
+/F1 10 Tf 1 0 0 1 390 514 Tm (Tax (8.5%)) Tj
+/F1 10 Tf 1 0 0 1 480 514 Tm (599.25) Tj
+/F1 11 Tf 1 0 0 1 390 498 Tm (Total due) Tj
+/F1 11 Tf 1 0 0 1 480 498 Tm (USD 7,649.25) Tj
+ET
+endstream
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000000311 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+1966
+%%EOF

@@ -1,0 +1,14 @@
+{
+  "name": "revexos-invoice-parser",
+  "description": "RevExOS Invoice Parser for Claude Code.",
+  "owner": { "name": "RevExOS", "email": "contact@revexos.com" },
+  "plugins": [
+    {
+      "name": "revexos-invoice-parser",
+      "source": "./",
+      "description": "Parse invoice PDFs and images into structured data, check the totals, export JSON/CSV.",
+      "version": "1.0.0",
+      "author": { "name": "RevExOS" }
+    }
+  ]
+}

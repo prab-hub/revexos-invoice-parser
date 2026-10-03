@@ -1,0 +1,10 @@
+{
+  "name": "revexos-invoice-parser",
+  "description": "Parse invoice PDFs and images into structured data (header fields + line items), check the totals, export JSON/CSV. Free RevExOS Invoice Parser API, plus the RevExOS MCP connector.",
+  "version": "1.0.0",
+  "author": { "name": "RevExOS", "url": "https://revexos.com" },
+  "homepage": "https://revexos.com/invoice-parser",
+  "repository": "https://github.com/prab-hub/revexos-invoice-parser",
+  "license": "MIT",
+  "keywords": ["invoice", "ocr", "accounts-payable", "ap-automation", "line-items", "csv"]
+}
