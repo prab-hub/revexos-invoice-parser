@@ -40,6 +40,18 @@ In **Settings > Connectors > Add custom connector**, enter the URL `https://reve
 ([setup steps](https://revexos.com/mcp)). Claude gets a `parse_invoice` tool that takes a public
 file URL and your email.
 
+## Troubleshooting
+
+| Problem | Fix |
+|---|---|
+| Connector shows `405` / "Not found" | Use exactly `https://revexos.com/api/mcp`. |
+| "Couldn't determine how this server signs in" | Expected: no sign-in is needed. Click **Continue anyway**, then **Connect**. |
+| Skill fails with `Tunnel connection failed: 403 Forbidden` or `connect_rejected` | Claude's code sandbox is blocking revexos.com. In **Settings > Capabilities**, add `revexos.com` to the allowed domains for code execution (on Team/Enterprise an org owner may need to). Retrying won't help until then. |
+| `parse_invoice` says the link returned a web page or login screen | The link must download the file publicly. Google Drive works when shared as "Anyone with the link". For local files, use the skill. |
+| "free limit reached" | Re-run with `--email`, or wait until tomorrow. |
+
+Full setup guide: [revexos.com/mcp](https://revexos.com/mcp).
+
 ## Run the script directly
 
 No dependencies beyond Python 3.8+.
