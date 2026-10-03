@@ -7,7 +7,7 @@
       "name": "revexos-invoice-parser",
       "source": "./",
       "description": "Parse invoice PDFs and images into structured data, check the totals, export JSON/CSV.",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "author": { "name": "RevExOS" }
     }
   ]

@@ -31,12 +31,12 @@ Then ask: *"Parse ~/Downloads/invoice-4471.pdf and save the line items as CSV."*
 
 1. Download `revexos-invoice-parser.zip` from the [latest release](https://github.com/prab-hub/revexos-invoice-parser/releases/latest).
 2. Go to **Settings > Capabilities > Skills**, click **Upload skill**, and choose the zip.
-3. Code execution needs to reach `revexos.com`: under **Settings > Capabilities**, allow network access for code execution (all domains, or add `revexos.com` to the allowed list).
+3. Code execution needs to reach `revexos.com`: under **Settings > Capabilities**, allow network access for code execution (all domains, or add `revexos.com` to the allowed list). On Team and Enterprise plans an org owner may have to allow it. If it's blocked, the script fails with `403 Forbidden` / `connect_rejected`.
 4. Upload an invoice in a chat and ask Claude to parse it.
 
 ### MCP connector only (no skill)
 
-Add a custom connector with the URL `https://revexos.com/api/mcp`
+In **Settings > Connectors > Add custom connector**, enter the URL `https://revexos.com/api/mcp`. No sign-in is needed, so the "couldn't determine how this server signs in" note can be skipped with **Continue anyway**
 ([setup steps](https://revexos.com/mcp)). Claude gets a `parse_invoice` tool that takes a public
 file URL and your email.
 
