@@ -22,7 +22,14 @@ Two ways to use it:
 
 ## Install
 
-### Claude Code (plugin: skill + MCP connector)
+### claude.ai, Claude Desktop or Cowork
+
+1. Go to **Customize > Plugins**, click **Add**, then **Add marketplace > Add from a repository**.
+2. Enter `prab-hub/revexos-invoice-parser`, then install **revexos-invoice-parser**. This adds the skill and the MCP connector.
+3. The skill sends the file to revexos.com from Claude's code sandbox: under **Settings > Capabilities**, allow network access for code execution (all domains, or add `revexos.com`). On Team and Enterprise plans an org owner may have to allow it. If it's blocked, the script fails with `403 Forbidden` / `connect_rejected`.
+4. Upload an invoice in a chat and ask Claude to parse it.
+
+### Claude Code
 
 ```
 /plugin marketplace add prab-hub/revexos-invoice-parser
@@ -30,13 +37,6 @@ Two ways to use it:
 ```
 
 Then ask: *"Parse ~/Downloads/invoice-4471.pdf and save the line items as CSV."*
-
-### claude.ai or Claude Desktop (skill)
-
-1. Download `revexos-invoice-parser.zip` from the [latest release](https://github.com/prab-hub/revexos-invoice-parser/releases/latest).
-2. Go to **Settings > Capabilities > Skills**, click **Upload skill**, and choose the zip.
-3. Code execution needs to reach `revexos.com`: under **Settings > Capabilities**, allow network access for code execution (all domains, or add `revexos.com` to the allowed list). On Team and Enterprise plans an org owner may have to allow it. If it's blocked, the script fails with `403 Forbidden` / `connect_rejected`.
-4. Upload an invoice in a chat and ask Claude to parse it.
 
 ### MCP connector only (no skill)
 
