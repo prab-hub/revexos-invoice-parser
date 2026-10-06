@@ -8,6 +8,10 @@ equal the total?) and can be exported as JSON or CSV.
 It uses the free [RevExOS Invoice Parser](https://revexos.com/invoice-parser), the same engine
 as the website and the [Chrome extension](https://chromewebstore.google.com/detail/revexos-invoice-parser/igddabebdginpkpcgbjfdomdpomlmgio).
 
+Want more than invoice parsing? The [RevExOS Q2C Kit](https://github.com/prab-hub/revexos-q2c-kit)
+includes this skill plus quote, PO to invoice, three-way match, billing, payment terms, collections and
+revenue recognition skills.
+
 Two ways to use it:
 
 | | Skill (this repo) | MCP connector |
