@@ -1,0 +1,38 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "revexos-invoice-parser",
+  "version": "1.1.0",
+  "description": "Parse invoice PDFs and images into structured data (header fields + line items), check the totals, export JSON/CSV. Free RevExOS Invoice Parser, through the RevExOS MCP server.",
+  "author": {
+    "name": "RevExOS",
+    "email": "contact@revexos.com",
+    "url": "https://revexos.com"
+  },
+  "homepage": "https://revexos.com/invoice-parser",
+  "repository": "https://github.com/prab-hub/revexos-invoice-parser",
+  "license": "MIT",
+  "keywords": ["invoice", "ocr", "accounts-payable", "ap-automation", "line-items", "csv"],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "RevExOS Invoice Parser",
+        "shortDescription": "Invoice PDF or image to structured data and CSV, totals checked",
+        "longDescription": "Attach an invoice PDF or image and get the invoice number, dates, PO number, vendor, customer, currency, payment terms, subtotal, tax, total and every line item, with checks that the lines add up to the subtotal and the subtotal plus tax to the total. Export as CSV or JSON for your AP system or spreadsheet. Free, 5 invoices per email per day.",
+        "developerName": "RevExOS",
+        "category": "Productivity",
+        "capabilities": ["Interactive", "Read"],
+        "websiteURL": "https://revexos.com/invoice-parser",
+        "supportURL": "https://revexos.com/contact",
+        "privacyPolicyURL": "https://revexos.com/privacy",
+        "termsOfServiceURL": "https://revexos.com/terms",
+        "defaultPrompt": [
+          "Parse this invoice and check the totals",
+          "Turn this invoice into a CSV of line items"
+        ],
+        "brandColor": "#0F1115",
+        "composerIcon": "./assets/logo.png",
+        "logo": "./assets/logo.png"
+      }
+    }
+  }
+}

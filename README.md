@@ -1,6 +1,6 @@
-# RevExOS Invoice Parser for Claude
+# RevExOS Invoice Parser for Claude and ChatGPT
 
-Parse invoice PDFs and images into structured data from inside Claude: invoice number, dates,
+Parse invoice PDFs and images into structured data from inside Claude, ChatGPT or Codex: invoice number, dates,
 PO number, vendor and customer, currency, payment terms, subtotal, tax, total, and every line
 item. Each result is checked (do the line items add up to the subtotal? does subtotal plus tax
 equal the total?) and can be exported as JSON or CSV.
@@ -37,6 +37,21 @@ Two ways to use it:
 ```
 
 Then ask: *"Parse ~/Downloads/invoice-4471.pdf and save the line items as CSV."*
+
+### ChatGPT
+
+Open **Plugins**, search for **RevExOS Invoice Parser**, click **+** to install, then start a new chat and
+pick it with `@`. Attach the invoice straight to the chat: the parser reads it from there.
+(Listed once OpenAI's directory review is done. Until then, add only the MCP server: **Plugins >
++ > Add custom MCP server**, URL `https://revexos.com/api/mcp`, no authentication.)
+
+### Codex
+
+```
+codex plugin marketplace add prab-hub/revexos-invoice-parser
+```
+
+Then run `/plugins` in Codex, install **revexos-invoice-parser**, and start a new session.
 
 ### MCP connector only (no skill)
 

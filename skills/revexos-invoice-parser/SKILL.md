@@ -8,6 +8,14 @@ description: Extract structured data from invoice PDFs and images (invoice numbe
 Turns an invoice file into structured data with the RevExOS Invoice Parser API
 (https://revexos.com/invoice-parser), the same engine as the website and the Chrome extension.
 
+## Which route to use
+
+- **In ChatGPT**, call the RevExOS MCP tool `parse_invoice` with the attached file (its `file`
+  field) and the user's email. ChatGPT's code sandbox can't reach revexos.com, so don't run the
+  script there. The tool returns the same `invoice` and `checks` shape described below. Without an
+  email, ask for one first; never make one up. Write any CSV or JSON export yourself from the result.
+- **Everywhere else** (Claude, Codex, a local agent), run the script below.
+
 ## How to run it
 
 The script is `scripts/parse_invoice.py`, next to this SKILL.md. It uses only the Python
@@ -23,6 +31,7 @@ python3 "$S" <invoice-file> [--email EMAIL] [--csv OUT.csv] [--json OUT.json]
 - Output on stdout: JSON with `invoice` (header fields plus `line_items`), `checks`, and `parses_used_today`.
 - `--csv` writes one row per line item with the header fields repeated, which most AP and spreadsheet imports accept.
 - In claude.ai, uploaded files are usually under `/mnt/user-data/uploads/`. Write output files to `/mnt/user-data/outputs/` so the user can download them.
+- In Codex, the file is in the user's workspace; write output files next to it unless they say otherwise.
 
 ## Limits and email
 
@@ -55,5 +64,6 @@ The API is free: 2 parses per IP per day, 5 per day with an email address.
 ## If the MCP tool is available
 
 If the RevExOS MCP connector is installed (tool `parse_invoice`) and the invoice is at a public
-https URL rather than a local file, you can call that tool with the URL and the user's email
-instead of running the script. It returns the same `invoice` and `checks` shape.
+https URL rather than a local file, you can call that tool with the URL (`file_url`) and the
+user's email instead of running the script. It returns the same `invoice` and `checks` shape.
+The tool allows 5 parses per email per day.

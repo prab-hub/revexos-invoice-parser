@@ -1,0 +1,12 @@
+{
+  "name": "revexos-invoice-parser",
+  "interface": { "displayName": "RevExOS" },
+  "plugins": [
+    {
+      "name": "revexos-invoice-parser",
+      "source": { "source": "local", "path": "./" },
+      "policy": { "installation": "AVAILABLE", "authentication": "ON_INSTALL" },
+      "category": "Productivity"
+    }
+  ]
+}
