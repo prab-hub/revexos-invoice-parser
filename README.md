@@ -25,7 +25,7 @@ Two ways to use it:
 ### claude.ai, Claude Desktop or Cowork
 
 1. Go to **Customize > Plugins**, click **Add**, then **Add marketplace > Add from a repository**.
-2. Enter `prab-hub/revexos-invoice-parser`, then install **revexos-invoice-parser**. This adds the skill and the MCP connector.
+2. Enter `prab-hub/revexos-invoice-parser` and click **Sync**. Then open the **Discover** tab, search **RevExOS** and install **RevExOS Invoice Parser** (adding the marketplace alone installs nothing). This adds the skill and the MCP connector.
 3. The skill sends the file to revexos.com from Claude's code sandbox: under **Settings > Capabilities**, allow network access for code execution (all domains, or add `revexos.com`). On Team and Enterprise plans an org owner may have to allow it. If it's blocked, the script fails with `403 Forbidden` / `connect_rejected`.
 4. Upload an invoice in a chat and ask Claude to parse it.
 
